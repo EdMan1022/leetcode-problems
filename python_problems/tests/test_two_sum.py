@@ -36,3 +36,21 @@ class TestFasterTwoSum(TestCase):
         test_target = 34
         solution = FasterSolution().twoSum(test_nums, test_target)
         assert [0, 4] == solution
+
+    def test_even_length_input_non_sequential(self):
+        test_nums = [16, 2, 4, 6, 9, 18]
+        test_target = 34
+        solution = FasterSolution().twoSum(test_nums, test_target)
+        assert [0, 5] == solution
+
+    def test_answer_in_middle_even(self):
+        test_nums = [2, 4, 16, 18, 6, 9]
+        test_target = 34
+        solution = FasterSolution().twoSum(test_nums, test_target)
+        assert [2, 3] == solution
+
+    def test_answer_in_middle_same(self):
+        test_nums = [2, 4, 16, 16, 6, 9]
+        test_target = 32
+        solution = FasterSolution().twoSum(test_nums, test_target)
+        assert [2, 3] == solution
