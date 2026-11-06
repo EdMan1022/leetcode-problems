@@ -1,5 +1,6 @@
 import unittest
-from python_problems.src.remove_node_linked_list import Solution, ListNode, create_linked_list, get_list_from_head
+from python_problems.src.remove_node_linked_list import Solution
+from python_problems.src.utils.linked_list_utils import (ListNode, create_linked_list, get_list_from_head)
 
 class MyTestCase(unittest.TestCase):
 
